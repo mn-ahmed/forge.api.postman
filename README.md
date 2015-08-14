@@ -47,7 +47,7 @@ To launch Postman, open your chrome apps by clicking on the button to the left o
 
 If the button isn’t there, you can use the ‘cmd-shift-B’ shortcut on OSX, and the ‘ctrl-shift-B’ shortcut on Windows.
 
-Then, click on the Postman icon to launch the app.
+Then, click on the Postman icon to launch the app.<br />
 ![](images/postman-logo.png)
 
 Postman will then open in a new window, ready to set up an environment.
@@ -104,10 +104,11 @@ Lets go through some example API calls so that you can get a feel for how it wor
       
 	  * To get an access token, expand the 'Authentication' folder under the Collections tab, and select the 'oAuth 2 - Token Request' call (<b>1</b>).
 	  * Press the 'Send' button (<b>2</b>).
-	  * In the response window, you will get the server reply which contains your access token (<b>3</b>). If you are using the 'JetPacks' extension,
-	    you do not not need to worry about chaining the call, JetPacks will automatically save the access token in your environment variables, as well 
-		as running the tests suite to validate the response (<b>5</b>). However, if you do not have 'JetPacks' installed, you need to select the bearer
-		string, right-click, and store it in the 'Bearer' variable like shown in (<b>4</b>).
+	  * In the response window, you will get the server reply which contains your access token (<b>3</b>). <br/>
+	    <b>If you are using the 'JetPacks' extension,</b> you do not not need to worry about chaining the call, JetPacks will automatically save 
+		the access token in your environment variables, as well as running the tests suite to validate the response (<b>5</b>). <br />
+		<b>However, if you do not have 'JetPacks' installed</b>, you need to select the bearer string, right-click, and store it in the 'Bearer' variable 
+		like shown in (<b>4</b>).
 		
 		![](images/get-started.png)
 		
@@ -119,6 +120,8 @@ Lets go through some example API calls so that you can get a feel for how it wor
       Save  'key' in variable 'BucketName'
 	  
   3. Any of the 'OSS - Upload *'
+  
+      Before calling the API, edit the 'Filename' variable to put the name of the file you're uploading.
 
       Save  'id' in variable 'URN'<br />
 	  Copy the 'id' value, go to this [website](https://www.base64encode.org/) to encode the string, and save the result into variable 'base64URN'
