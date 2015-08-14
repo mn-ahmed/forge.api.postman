@@ -9,6 +9,10 @@ An AutodeskView & Data API postman collection, environment with JetPacks support
 
 Demonstrates the Autodesk View & Data API authorisation and translation process using a Postman Collection.
 
+If you know Postman already, here are the 2 components you need:
+  * [Autodesk View & Data API Postman Environment](https://raw.githubusercontent.com/Developer-Autodesk/view.and.data.api.postman/master/Autodesk%20View%20%26%20Data%20API%20Production%20Server.postman_environment)
+  * [Autodesk View & Data API Postman Collection](https://www.getpostman.com/collections/14e42c06b5f44aa2f88f)
+
 
 ## Description
 
