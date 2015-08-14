@@ -82,7 +82,7 @@ To set up Postman with the Autodesk View & Data API collection, make sure that y
 Choose 'Download from link', and copy the URL below, then hit the 'Import' button.
 https://www.getpostman.com/collections/14e42c06b5f44aa2f88f
 
-You should get something like this:
+You should get something like this:<br />
 ![](images/collection-v1.png)
 
 Note: This collection is setup to use 'Postman JetPacks' if you got a license, but you can use that collection without JetPacks too. To
@@ -102,13 +102,32 @@ Lets go through some example API calls so that you can get a feel for how it wor
 	  This access token will be sent in the header of all subsequent calls to the API. This token will automatically expire after 30 minutes, 
 	  so you may have to renew the token every 30 minutes or if you got an expire message in one of the following call.
       
-	  * To get an access token, expand the 'Authentication' folder under the Collections tab, and select the 'oAuth 2 - Token Request' call (<b>1*</b>).
-	  * Press the 'Send' button (<b>2*</b>).
-	  * In the response window, you will get the server reply which contains your access token (<b>3*</b>). If you are using the JetPacks extension,
+	  * To get an access token, expand the 'Authentication' folder under the Collections tab, and select the 'oAuth 2 - Token Request' call (<b>1</b>).
+	  * Press the 'Send' button (<b>2</b>).
+	  * In the response window, you will get the server reply which contains your access token (<b>3</b>). If you are using the 'JetPacks' extension,
 	    you do not not need to worry about chaining the call, JetPacks will automatically save the access token in your environment variables, as well 
-		as running the tests suite to validate the response (<b>5*</b>). However, if you do not have JetPacks installed, you need to select the bearer
-		string, right-click, and store it in the Bearer variable like shown in (<b>4*</b>).
+		as running the tests suite to validate the response (<b>5</b>). However, if you do not have 'JetPacks' installed, you need to select the bearer
+		string, right-click, and store it in the 'Bearer' variable like shown in (<b>4</b>).
+		
+		![](images/get-started.png)
+		
+		All the API definitions work the same way whether they are POST, GET, PUT or HEAD. The rest of this chapter will only concentrate on 
+		telling you what value to save in which variable to chain calls. If you are using 'JetPacks', bail now, it is done automatically.
 	  
+  2. OSS - Bucket Creation
+
+      Save  'key' in variable 'BucketName'
+	  
+  3. Any of the 'OSS - Upload *'
+
+      Save  'id' in variable 'URN'<br />
+	  Copy the 'id' value, go to this [website](https://www.base64encode.org/) to encode the string, and save the result into variable 'base64URN'
+	  
+  4. Create Reference
+  
+      In this one you need to edit the 'request body', you need to understand the reference system to edit the request body appropriately. Read
+	  the following [blog article](http://adndevblog.typepad.com/cloud_and_mobile/2015/07/how-to-set-references-with-revit-files-for-view-and-data-api.html) 
+	  to get some explanations in addition to the documentation.
 	  
 	  
 	  
