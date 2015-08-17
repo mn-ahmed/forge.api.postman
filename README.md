@@ -84,7 +84,7 @@ To set up Postman with the Autodesk View & Data API collection, make sure that y
 ![](images/import-collection.png)
 
 Choose 'Download from link', and copy the URL below, then hit the 'Import' button.
-https://www.getpostman.com/collections/14e42c06b5f44aa2f88f
+https://www.getpostman.com/collections/fcf462a151b21e63a3fe
 
 You should get something like this:<br />
 ![](images/collection-v1.png)
