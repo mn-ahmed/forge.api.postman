@@ -9,7 +9,7 @@
 [![Model-Derivative](https://img.shields.io/badge/Model%20Derivative-v2-green.svg)](http://developer-autodesk.github.io/)
 [![Viewer](https://img.shields.io/badge/Forge%20Viewer-v2.11-green.svg)](http://developer-autodesk.github.io/)
 
-**Note:** For using this sample, you need a valid oAuth credential for the translation / extraction portion. Visit those pages ( [oAuth2](https://developer.autodesk.com/en/docs/oauth/v2/tutorials/), [Data Management](https://developer.autodesk.com/en/docs/data/v2/tutorials/) and [Model Derivative](https://developer.autodesk.com/en/docs/model-derivative/v2/tutorials/) ) for instructions to get on-board.
+**Note:** For using this sample, you need a valid oAuth credential for the translation / extraction portion. Visit those pages ( [oAuth2](https://developer.autodesk.com/en/docs/oauth/v2/tutorials/), [Data Management](https://developer.autodesk.com/en/docs/data/v2/tutorials/) and [Model Derivative](https://developer.autodesk.com/en/docs/model-derivative/v2/tutorials/) ) for instructions to get on-board. **Data Management API - BIM360 Collection is not completed yet**
 
 
 ## Motivation
