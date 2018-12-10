@@ -7,9 +7,8 @@
 [![Data-Management](https://img.shields.io/badge/Data%20Management-v2-green.svg)](http://developer-autodesk.github.io/)
 [![OSS](https://img.shields.io/badge/OSS-v2-green.svg)](http://developer-autodesk.github.io/)
 [![Model-Derivative](https://img.shields.io/badge/Model%20Derivative-v2-green.svg)](http://developer-autodesk.github.io/)
-[![Viewer](https://img.shields.io/badge/Forge%20Viewer-v2.11-green.svg)](http://developer-autodesk.github.io/)
 
-**Note:** For using this sample, you need a valid oAuth credential for the translation / extraction portion. Visit those pages ( [oAuth2](https://developer.autodesk.com/en/docs/oauth/v2/tutorials/), [Data Management](https://developer.autodesk.com/en/docs/data/v2/tutorials/) and [Model Derivative](https://developer.autodesk.com/en/docs/model-derivative/v2/tutorials/) ) for instructions to get on-board. **Data Management API - BIM360 Collection is not completed yet**
+**Note:** For using this sample, you need a valid oAuth credential for the translation / extraction portion. Visit those pages ( [oAuth2](https://developer.autodesk.com/en/docs/oauth/v2/tutorials/), [Data Management](https://developer.autodesk.com/en/docs/data/v2/tutorials/), [Model Derivative](https://developer.autodesk.com/en/docs/model-derivative/v2/tutorials/) and [BIM360](https://forge.autodesk.com/en/docs/bim360/v1/overview/introduction/) ) for instructions to get on-board. **The BIM360 Collection contains Data Management API for BIM360 and BIM360 HQ API**
 
 
 ## Motivation
@@ -21,13 +20,17 @@ To facilitate understanding the Forge API and help developers to debug their pro
 An Autodesk Forge API postman collection, environment with JetPacks support, demonstrating the Autodesk Forge Platform APIs authorization and translation process using a Postman Collection.
 
 If you know Postman already, here are the 2 components you need:
-  * [Autodesk Forge Platform APIs Postman Environment](forge.api.postman_environment.json)
-  * [Autodesk Forge Platform APIs Postman Collection](https://www.getpostman.com/collections/8dddbf02e279be1279e4)
+
+* [Autodesk Forge Platform APIs Postman Environment for Developer Own OSS bucket](autodesk.forge.developer.app.postman_environment.json)
+
+* [Autodesk Forge Platform APIs Postman Environment for BIM360](autodesk.forge.bim360.intge.postman_environment.json)
+
+* [Autodesk Forge Platform APIs Postman Collection](https://www.getpostman.com/collections/8dddbf02e279be1279e4)
 
 This repository exercises the Postman tool to demonstrate the Autodesk Forge Platform APIs
-authorization and translation process mentioned in those pages ( [oAuth2](https://developer.autodesk.com/en/docs/oauth/v2/tutorials/), [Data Management](https://developer.autodesk.com/en/docs/data/v2/tutorials/) and [Model Derivative](https://developer.autodesk.com/en/docs/model-derivative/v2/tutorials/) ).
+authorization and translation process mentioned in those pages ( [oAuth2](https://developer.autodesk.com/en/docs/oauth/v2/tutorials/), [Data Management](https://developer.autodesk.com/en/docs/data/v2/tutorials/), [Model Derivative](https://developer.autodesk.com/en/docs/model-derivative/v2/tutorials/) and [BIM360](https://forge.autodesk.com/en/docs/bim360/v1/tutorials/) ).
 
-In order to make use of this sample, you need to register your consumer key by going to ***[https://developer.autodesk.com > My Apps](https://developer.autodesk.com/myapps)***, thus getting the credentials necessary for HTTP command arguments.
+In order to make use of this sample, you need to register your consumer key by going to ***[https://forge.autodesk.com > My Apps](https://forge.autodesk.com/myapps)***, thus getting the credentials necessary for HTTP command arguments.
 
 
 
@@ -48,13 +51,13 @@ To do so, we click the downward arrow next to ‘No environment and select ‘Ma
 At the next window that opens, click ‘Import’.<br />
 ![](images/import-env.png)
 
-And either choose the file ***forge.api.postman_environment.json*** from the repository or download it directly from [here](forge.api.postman_environment.json).
+And either choose the file ***forge.api.postman_environment.json*** from the repository or download it directly from [hre](autodesk.forge.developer.app.postman_environment.json) and [here](autodesk.forge.bim360.intge.postman_environment.json).
 
-Next, click on 'Autodesk View & Data API Production Server' link to enter the edit mode:
+Next, click on 'Autodesk Forge API Production Server' link to enter the edit mode:
 
 ![](images/edit-env.png)
 
-Finally, enter your Autodesk View & Data API keys, and click 'Update'.
+Finally, enter your Autodesk Forge API keys, and click 'Update'.
 ![](images/edit-key-env.png)
 
 
@@ -95,7 +98,7 @@ Lets go through some example API calls so that you can get a feel for how it wor
 	  This access token will be sent in the header of all subsequent calls to the API. This token will automatically expire after 30 minutes, 
 	  so you may have to renew the token every 30 minutes or if you got an expire message in one of the following call.
       
-	  * To get an access token, expand the 'Authentication' folder under the Collections tab, and select the 'oAuth 2 - Token Request' call (<b>1</b>).
+	  * To get an access token, expand the 'Authentication' folder under the Collections tab, and select the 'Two Legged - Token Request' call (<b>1</b>).
 	  * Press the 'Send' button (<b>2</b>).
 	  * In the response window, you will get the server reply which contains your access token (<b>3</b>). <br/>
 	    <b>If you are using the 'JetPacks' extension,</b> you do not not need to worry about chaining the call, JetPacks will automatically save 
@@ -136,7 +139,10 @@ This sample is licensed under the terms of the [MIT License](http://opensource.o
 
 ## Written by
 
-Written by [Yi-Sheng Kang](https://www.facebook.com/yisheng.kang)<br/>
+Eason Kang [@yiskang](https://twitter.com/yiskang) <br />
+Autodesk Developer Network & Forge Partner Development <br />
+https://developer.autodesk.com/ <br />
+https://forge.autodesk.com/blog <br />
 
 
 ## Concepts from
