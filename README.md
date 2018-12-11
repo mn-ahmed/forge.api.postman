@@ -25,7 +25,7 @@ If you know Postman already, here are the 2 components you need:
 
 * [Autodesk Forge Platform APIs Postman Environment for BIM360](autodesk.forge.bim360.intge.postman_environment.json)
 
-* [Autodesk Forge Platform APIs Postman Collection](https://www.getpostman.com/collections/8dddbf02e279be1279e4)
+* [Autodesk Forge Platform APIs Postman Collection](https://www.getpostman.com/collections/0322dcd46000d1696e5c8dddbf02e279be1279e4)
 
 This repository exercises the Postman tool to demonstrate the Autodesk Forge Platform APIs
 authorization and translation process mentioned in those pages ( [oAuth2](https://developer.autodesk.com/en/docs/oauth/v2/tutorials/), [Data Management](https://developer.autodesk.com/en/docs/data/v2/tutorials/), [Model Derivative](https://developer.autodesk.com/en/docs/model-derivative/v2/tutorials/) and [BIM360](https://forge.autodesk.com/en/docs/bim360/v1/tutorials/) ).
@@ -71,7 +71,7 @@ To set up Postman with the ***Autodesk Forge Platform APIs Postman Collection***
 ![](images/import-collection.png)
 
 Choose 'Import From Link', and copy the URL below, then hit the 'Import' button.
-https://www.getpostman.com/collections/8dddbf02e279be1279e4
+https://www.getpostman.com/collections/0322dcd46000d1696e5c8dddbf02e279be1279e4
 
 You should get something like this:
 
